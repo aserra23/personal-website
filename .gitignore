@@ -48,5 +48,4 @@ Thumbs.db
 # 
 .editorconfig
 .gitkeep
-ng-add-pug-loader.js
 package-lock.json
