@@ -15,27 +15,14 @@
 # [START runtime]
 runtime: nodejs10
 handlers:
-- url: / 
-    static_files: dist/index.html 
+- url: /
+    static_files: dist/index.html
     upload: dist/index.html
-- url: / 
-     static_dir: dist
+- url: /
+    static_dir: dist
 # [END runtime]
-
-#Flexible
-#env: flex
 
 # This sample incurs costs to run on the App Engine flexible environment.
 # The settings below are to reduce costs during testing and are not appropriate
 # for production use. For more information, see:
 # https://cloud.google.com/appengine/docs/flexible/nodejs/configuring-your-app-with-app-yaml
-
-#Flexible
-#manual_scaling:
-#  instances: 1
-#resources:
-#  cpu: 1
-#  memory_gb: 0.5
-#  disk_size_gb: 10
-
-#
