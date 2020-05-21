@@ -16,10 +16,10 @@
 runtime: nodejs12
 handlers:
 - url: /
-  static_files: dist/index.html
-  upload: dist/index.html
+  static_files: personal-website/index.html
+  upload: personal-website/index.html
 - url: /
-  static_dir: dist
+  static_dir: personal-website
 # [END runtime]
 
 # This sample incurs costs to run on the App Engine flexible environment.
