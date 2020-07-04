@@ -68,13 +68,58 @@
           "options": {
             "browserTarget": "personal-website:build",
             "host": "localhost",
-            "port": 8080
+            "port": 8080,
+            "sslKey": "",
+            "sslCert": "",
+            "ssl": false
           },
           "configurations": {
             "production": {
               "browserTarget": "personal-website:build:production"
             }
           }
+        },
+        "dev": {
+          "builder":"@angular-devkit/build-angular:dev-server",
+          "options": {
+            "allowedHosts": [],
+            "aot": true,
+            "baseHref": "",
+            "browserTarget": "",
+            "commonChunk": false,
+            "deployUrl": "",
+            "disableHostCheck": false,
+            "evalSourceMap": false,
+            "hmr": false,
+            "hmrWarning": true,
+            "host": "localhost",
+            "liveReload": true,
+            "open": false,
+            "optimization":false,
+            "port": 4200,
+            "progress": false,
+            "proxyConfig": "",
+            "publicHost": "",
+            "servePath": "",
+            "servePathDefaultWarning": true,
+            "sourceMap": true,
+            "ssl": false,
+            "sslCert": "",
+            "sslKey": "",
+            "vendorChunk": false,
+            "vendorSourceMap": false,
+            "verbose": false,
+            "watch": true
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "personal-website:build:production"
+            }
+          }
+
+        },
+        "beta": {
+          "builder":"@angular-devkit/build-angular:server"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
